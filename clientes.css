@@ -1,0 +1,108 @@
+/* Configuração básica do corpo da página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('cadastro.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Layout do conteúdo centralizado */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo do card de conteúdo */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+/* Estilo do cabeçalho h2 */
+h2 {
+  color: #333;
+}
+
+/* Estilo da sobreposição */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+/* Estilo da tabela de clientes */
+.clientes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Estilo das células da tabela */
+.clientes-table th,
+.clientes-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Estilo do checkbox do cliente */
+.cliente-checkbox {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  margin-right: 5px;
+}
+
+/* Larguras específicas para as colunas da tabela de clientes */
+.cliente-selecao {
+  width: 10px; /* Ajuste conforme necessário */
+}
+
+.cliente-numero {
+  width: 50px;
+}
+
+.cliente-nome {
+  width: 150px; /* Ajuste conforme necessário */
+}
+
+.cliente-usuario {
+  width: 100px; /* Ajuste conforme necessário */
+}
+
+.cliente-senha {
+  width: 80px; /* Ajuste conforme necessário */
+}
+
+/* Estilo do botão de ação */
+.action-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Efeito de hover para o botão de ação */
+.action-button:hover {
+  background-color: #45a049;
+}

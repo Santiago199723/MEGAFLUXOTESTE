@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="signup.css" />
+  <title>CADASTRO DO MEGA FLUXO</title>
+</head>
+<body>
+  <div class="overlay"></div> <!-- Adicionado a sobreposição -->
+  <div class="container">
+    <div class="card">
+      <h1>Cadastro de Clientes</h1>
+
+      <div id="msgError"></div>
+      <div id="msgSuccess"></div>
+
+      <div class="label-float">
+        <input type="text" id="nome" placeholder=" " required />
+        <label id="labelNome" for="nome">NOME COMPLETO DO CLIENTE</label>
+      </div>
+
+      <div class="label-float">
+        <input type="text" id="usuario" placeholder=" " required />
+        <label id="labelUsuario" for="usuario">FORNEÇA UM USUÁRIO PARA O CLIENTE</label>
+      </div>
+
+      <div class="label-float">
+        <input type="password" id="senha" placeholder=" " required />
+        <label id="labelSenha" for="senha">CRIE UMA SENHA PARA O SEU CLIENTE</label>
+        <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+      </div>
+
+      <div class="label-float">
+        <input type="password" id="confirmSenha" placeholder=" " required />
+        <label id="labelConfirmSenha" for="confirmSenha"
+          >CONFIRME A SENHA</label
+        >
+        <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+      </div>
+
+      <div class="justify-center">
+        <button onclick="cadastrar()">CADASTRAR CLIENTE</button>
+
+        <!-- Adicione este botão para visualizar clientes cadastrados -->
+        <button onclick="visualizarClientes()">Ver Clientes Cadastrados</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>
